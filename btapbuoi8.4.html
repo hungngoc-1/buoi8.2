@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Hero & Dịch vụ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
+            text-align: center;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .hero {
+            background-color: #c44d58;
+            color: white;
+            padding: 50px;
+            font-size: 24px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .service-item {
+            background-color: #d98c3a;
+            color: white;
+            padding: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="hero">Hero</div>
+        <div class="services">
+            <div class="service-item">Dịch vụ 1</div>
+            <div class="service-item">Dịch vụ 2</div>
+            <div class="service-item">Dịch vụ 3</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
